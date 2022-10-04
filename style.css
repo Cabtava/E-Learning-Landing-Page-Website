@@ -302,7 +302,7 @@ footer button {
     }
 }
 
-/* ====================== Media Screen | Tablet Version | 768px ====================== */
+/* ====================== Media Screen | Tablet Version | 1440px ====================== */
 @media only screen and (min-width: 1440px) {
     /* === Wrapper === */
     .wrapper {
@@ -342,7 +342,7 @@ footer button {
 
     .desktop-display-only {
         display: block;
-        width: 891.63px;
+        width: 757.63px;
         height: 836.92px;
         object-fit: cover;
         
@@ -354,5 +354,12 @@ footer button {
     .div-one p {
         line-height: 40px;
         font-size: 32px;
+    }    
+}
+
+/* ====================== Media Screen | Tablet Version | 1440px ====================== */
+@media only screen and (min-width: 1740px) {
+        .desktop-display-only {
+            width: 891.63px;
     }
 }
