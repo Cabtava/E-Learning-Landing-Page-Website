@@ -1,0 +1,358 @@
+/* ====================== Import Fonts from Google ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+/* ====================== Roots ====================== */
+:root {
+    /* --- Color Root --- */
+    --color-title: #13183F;
+    --color-subtitle: #83869A;
+    --color-gradient: linear-gradient(#FF6F48, #F02AA6);
+
+}
+
+/* ====================== Generals ====================== */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* === Wrapper === */
+.wrapper {
+    padding: 0rem 1rem;
+}
+
+/* ===== Header ===== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-logo {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--color-title);
+}
+
+header button {
+    width: 140px;
+    height: 48px;
+
+    outline: none;
+    border: none;
+    border-radius: 28px;
+    color: #ffffff;
+    background-color: var(--color-title);
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* ===== Main ===== */ 
+.main-container h1 {
+    font-weight: 800;
+    font-size: 40px;
+    color: var(--color-title);
+}
+
+.main-container p {
+    color: var(--color-subtitle);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.main-container button {
+    width: 167px;
+    height: 56px;
+
+    border: none;
+    outline: none;
+    border-radius: 31.5px;
+
+    color: #ffffff;
+    background-image: var(--color-gradient);
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+
+    margin: 24px 0px 46px 0px;
+}
+
+.image-container {
+    width: 327px;
+    height: 301px;
+    margin: 0 auto;
+}
+
+.mobile-display-only {
+    width: 327px;
+    height: 301px;
+    object-fit: cover;
+}
+
+/* ===== Section One ===== */
+.section-one {
+    background-image: linear-gradient(#FFFFFF, #F0F1FF);
+}
+
+.section-one .wrapper {
+    padding: 0rem 1rem 3rem 1rem;
+}
+
+/* - Div One - */
+.div-one {
+    margin: 0 0 16px 0;
+    width: 343px;
+    height: 120px;
+    
+    color: #ffffff;
+    background-image: var(--color-gradient);
+
+    font-weight: 800;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+}
+
+.div-one p {
+    width: 286px;
+    height: 64px;
+}
+
+/* - Div Two - */
+.div-two {
+    margin: 3rem 0rem;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.div-two div {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: var(--color-gradient);
+}
+
+.svg-container {
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+}
+
+.div-two h3 {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--color-title);
+}
+
+.div-two p {
+    color: var(--color-subtitle);
+    width: 286px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.div-two h4 {
+    color: #F74780;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--color-title);
+    height: 120px;
+    width: 100%;
+
+}
+
+.footer-container {
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .title-logo {
+    margin: 0;
+    color: #ffffff !important;
+}
+
+footer button {
+    width: 140px;
+    height: 48px;
+
+    border: none;
+    outline: none;
+    border-radius: 28px;
+
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #FFFFFF;
+    background-image: linear-gradient(#4851FF, #F02AA6);
+}
+
+/* - Tablet Display image only | Desktop Display image only - */
+.tablet-display-only,
+.desktop-display-only {
+    display: none;
+}
+
+/* ====================== Media Screen | Tablet Version | 768px ====================== */
+@media only screen and (min-width: 768px) {
+    /* === Wrapper === */
+    .wrapper {
+        margin: 0 39px;
+    }
+
+    /* === Main === */
+    main {
+        overflow: hidden;
+        margin-bottom: 160px;
+    }
+
+    .main-container {
+        display: flex;
+    }
+
+    .main-container div:first-child {
+        margin-top: 3rem;
+    }
+
+    /* - Mobile Display image only - */
+    .mobile-display-only {
+        display: none;
+    }
+
+    /* - Desktop Display image only - */
+    .tablet-display-only {
+        display: block;
+        width: 330.71000000000004px;
+        height: 612px;
+        object-fit: cover;
+        position: absolute;
+        top: 1;
+        /* right: 26rem; */
+        right: 0rem;
+        top: 2rem;
+    }
+
+    .main-container p {
+        width: 398px;
+        line-height: 26px;
+    }
+
+    .main-container h1 {
+        width: 326px;
+    } 
+
+    /* === Section One === */
+    .section-one .wrapper {
+        margin: 0;
+    }
+    
+    .section-one-container {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2, auto);
+        gap: 3rem 1rem;
+    }
+    
+    /* - Div One - */
+    .div-one {
+        width: 339px;
+        height: 308px;
+        border-radius: 10px;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+
+    .div-one p {
+        margin-top: 5rem;
+    }
+
+    /* - Div Two - */
+    .div-two {
+        margin: 0;
+        width: 300px;
+        height: 259px;
+    }
+}
+
+/* ====================== Media Screen | Tablet Version | 768px ====================== */
+@media only screen and (min-width: 1440px) {
+    /* === Wrapper === */
+    .wrapper {
+        width: 1150px;
+        margin: 0 auto;
+    }
+
+    /* === Main === */
+    main {
+        margin-bottom: 340px;
+    }
+
+    .main-container h1 {
+        width: 457px;
+        font-size: 56px;
+    }
+
+    .main-container button {
+        height: 63px;
+    }
+
+    /* === Section One === */
+    .section-one{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-one-container {
+        grid-template-columns: repeat(3, auto);
+        gap: 3rem 4rem;
+    }
+
+    .tablet-display-only {
+        display: none;
+    }
+
+    .desktop-display-only {
+        display: block;
+        width: 891.63px;
+        height: 836.92px;
+        object-fit: cover;
+        
+        position: absolute;
+        top: -2rem;
+        right: 0;
+    }
+
+    .div-one p {
+        line-height: 40px;
+        font-size: 32px;
+    }
+}
